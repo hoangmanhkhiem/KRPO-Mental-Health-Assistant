@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "type": "multiple_choice",
+    "question": "Thủ đô của Việt Nam là gì?",
+    "options": ["Hà Nội", "Hồ Chí Minh", "Đà Nẵng", "Huế"],
+    "answer": "Hà Nội"
+  },
+  {
+    "id": 2,
+    "type": "true_false",
+    "question": "Trái Đất là hành tinh thứ ba từ Mặt Trời.",
+    "answer": true
+  },
+  {
+    "id": 3,
+    "type": "multiple_choice",
+    "question": "Ngôn ngữ lập trình nào sau đây là ngôn ngữ bậc cao?",
+    "options": ["Assembly", "Python", "Machine Code", "Binary"],
+    "answer": "Python"
+  },
+  {
+    "id": 4,
+    "type": "true_false",
+    "question": "Nước sôi ở 100 độ C ở điều kiện bình thường.",
+    "answer": true
+  }
+] 

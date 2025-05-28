@@ -1,12 +1,12 @@
 import ActivityLevelScreen from '@/components/ActivityLevelScreen';
 import AgeScreen from '@/components/AgeScreen';
 import BirdNameQuestion from '@/components/BirdNameQuestion';
-import HatchedChickenScreen from '@/components/HathedChickenScreen';
 import MorningRoutineScreen from '@/components/MorningRoutineScreen';
 import NotificationsScreen from '@/components/NotificationsScreen';
 import SelfCareScreen from '@/components/SelfCareScreen';
 import SleepDurationScreen from '@/components/SleepDurationScreen';
 import StressLevelScreen from '@/components/StressLevelScreen';
+import { router } from 'expo-router';
 import React, { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -29,9 +29,8 @@ export default function QuizScreen() {
 
   let questionComponent = null;
   if (current === 0) {
-    questionComponent = (
-      <HatchedChickenScreen birbData={birbData} updateBirbData={updateBirbData} onNext={goNext} onBack={goBack} />
-    );
+    router.replace('/identity/login');
+    return null;
   } else if (current === 1) {
     questionComponent = (
       <BirdNameQuestion birbData={birbData} updateBirbData={updateBirbData} onNext={goNext} onBack={goBack} />
